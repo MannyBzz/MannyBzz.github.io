@@ -1,4 +1,4 @@
-[IndexBIS23.html](https://github.com/user-attachments/files/24105485/IndexBIS23.html)
+[IndexBIS23.html](https://github.com/user-attachments/files/24105745/IndexBIS23.html)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -181,7 +181,7 @@
     <!-- Header -->
     <header>
         <div class="logo-section">
-            <img src="esIAMGE.png.jpg" alt="Emmanuel Sintim Logo" class="logo">
+            <img src="esIAMGE.png" alt="Emmanuel Sintim Logo" class="logo">
         </div>
         <div>
             <h1>BIS23 Portfolio</h1>
