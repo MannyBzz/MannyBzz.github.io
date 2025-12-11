@@ -1,177 +1,243 @@
-# MannyBzz.github.io[dealershipIndex.html](https://github.com/user-attachments/files/24105090/dealershipIndex.html)
+[IndexBIS23.html](https://github.com/user-attachments/files/24105485/IndexBIS23.html)
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elite Motors - Grand Opening</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIS23 Portfolio - Emmanuel Sintim</title>
 
-  <!-- Inline CSS -->
-  <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      color: #222;
-      background: url('background-texture.jpg') no-repeat center center fixed;
-      background-size: cover;
-      margin: 0;
-      padding: 0;
-      cursor: none; /* hides default cursor for custom effect */
-    }
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-    /* Custom cursor circle */
-    .cursor {
-      width: 20px;
-      height: 20px;
-      border: 2px solid #0073e6;
-      border-radius: 50%;
-      position: fixed;
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-      transition: transform 0.15s ease-out, width 0.2s, height 0.2s;
-      z-index: 9999;
-    }
+    <!-- CSS -->
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .cursor.hover {
-      width: 40px;
-      height: 40px;
-      border-color: #ff6600;
-    }
+        body {
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+            color: #fff;
+            background: linear-gradient(-45deg, #1abc9c, #3498db, #9b59b6, #e74c3c);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
 
-    header {
-      text-align: center;
-      background-color: #003366;
-      color: white;
-      padding: 40px 0;
-    }
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
 
-    header img {
-      width: 120px;
-      height: auto;
-      border-radius: 50%;
-      transition: transform 0.3s;
-    }
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background-color: rgba(0,0,0,0.5);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
 
-    header img:hover {
-      transform: scale(1.1);
-    }
+        header img.logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
 
-    h1 {
-      font-size: 2.5em;
-      margin-top: 15px;
-      color: #ffcc00;
-    }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #fff;
+            margin-left: 20px;
+            display: inline-block;
+        }
 
-    .content {
-      max-width: 900px;
-      margin: 40px auto;
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    }
+        header p {
+            font-size: 1.1rem;
+            color: #ecf0f1;
+            margin-left: 10px;
+        }
 
-    .intro {
-      font-size: 1.2em;
-      color: #003366;
-      text-align: center;
-    }
+        /* Introduction Section */
+        .intro {
+            text-align: center;
+            padding: 100px 20px;
+        }
 
-    .bio {
-      margin-top: 20px;
-      line-height: 1.6em;
-      color: #444;
-    }
+        .intro h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+        }
 
-    .photo {
-      text-align: center;
-      margin: 30px 0;
-    }
+        .intro p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #f1c40f;
+        }
 
-    .photo img {
-      width: 400px;
-      border-radius: 12px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
+        /* Bio Section */
+        .bio {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px;
+            gap: 40px;
+        }
 
-    .photo img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px #888;
-    }
+        .bio img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
 
-    footer {
-      background-color: #222;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
+        .bio img:hover {
+            transform: scale(1.1);
+        }
 
-    footer a {
-      color: #66ccff;
-      text-decoration: none;
-      margin: 0 12px;
-      transition: color 0.3s;
-    }
+        .bio-text {
+            max-width: 500px;
+        }
 
-    footer a:hover {
-      color: #ff6600;
-    }
-  </style>
+        .bio-text h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #f39c12;
+            margin-bottom: 15px;
+        }
+
+        .bio-text p {
+            font-size: 1.1rem;
+            color: #ecf0f1;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(0,0,0,0.6);
+            color: #ecf0f1;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #1abc9c;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #e74c3c;
+        }
+
+        /* Custom Cursor */
+        .cursor {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease, background-color 0.2s ease;
+            z-index: 1000;
+        }
+
+        /* Button style */
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            margin-top: 15px;
+            background-color: #e67e22;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #d35400;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
-
 <body>
-  <!-- Custom cursor -->
-  <div class="cursor"></div>
 
-  <!-- HEADER -->
-  <header>
-    <img src= "logo.jpeg" alt="Elite Motors Logo" />
-    <h1>Elite Motors - Grand Opening</h1>
-    <p>Where Innovation Meets the Road</p>
-  </header>
+    <!-- Header -->
+    <header>
+        <div class="logo-section">
+            <img src="esIAMGE.png.jpg" alt="Emmanuel Sintim Logo" class="logo">
+        </div>
+        <div>
+            <h1>BIS23 Portfolio</h1>
+            <p>Page for Midterm and Final project</p>
+        </div>
+    </header>
 
-  <!-- MAIN CONTENT -->
-  <div class="content">
-    <p class="intro">
-      Welcome to <strong>Elite Motors</strong> — your destination for modern vehicles, trusted service, and unmatched customer care!
-    </p>
+    <!-- Introduction -->
+    <section class="intro">
+        <h2>Welcome to My BIS23 Portfolio</h2>
+        <p>This website showcases my work for the Midterm and Final project. Explore my bio, projects, and creative endeavors. All work presented here is part of my BIS23 journey.</p>
+    </section>
 
-    <p class="bio">
-      Elite Motors is proud to announce the grand opening of our brand-new dealership in the heart of the city.
-      We specialize in new and certified pre-owned vehicles from leading brands, offering a world-class showroom
-      experience and top-tier customer support. Our mission is to make every driver’s dream car a reality with
-      affordable financing, expert maintenance, and premium quality.
-    </p>
+    <!-- Bio Section -->
+    <section class="bio">
+        <!-- Replace 'your-picture.jpg' with your personal picture -->
+        <img src="3583447E-9E49-42A5-AE0F-6AA316F13DFA.jpeg" alt="Emmanuel Sintim Picture">
+        <div class="bio-text">
+            <h3>About Me</h3>
+            <p>Hello! I am Emmanuel Sintim, a passionate student exploring the world of technology, design, and web development. This section is dedicated to introducing myself and my projects for the BIS23 Midterm and Final. Feel free to explore and learn more about my work.</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
 
-    <div class="photo">
-      <img src= "showroom.jpeg" alt="Elite Motors Showroom" />
-      <p><em>Our state-of-the-art showroom, ready to serve you.</em></p>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2012 Emmanuel Sintim. All Rights Reserved.</p>
+        <p>
+            <a href="#">Home</a> | 
+            <a href="#">Projects</a> | 
+            <a href="#">Contact</a>
+        </p>
+    </footer>
 
-    <p style="text-align:center; color:#555; font-size:0.9em;">
-      &copy; 2012 Elite Motors — All Rights Reserved
-    </p>
-  </div>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <script>
+        const cursor = document.getElementById('cursor');
 
-  <!-- FOOTER -->
-  <footer>
-    <a href="mailto:info@elitemotors.com">Contact Us</a> |
-    <a href="https://www.google.com/maps" target="_blank">Find Us</a>
-  </footer>
+        document.addEventListener('mousemove', e => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
 
-  <!-- Custom Cursor Script -->
-  <script>
-    const cursor = document.querySelector('.cursor');
+        document.querySelectorAll('a, img, .btn').forEach(elem => {
+            elem.addEventListener('mouseover', () => {
+                cursor.style.transform = 'translate(-50%, -50%) scale(2.2)';
+                cursor.style.backgroundColor = 'rgba(255,255,255,0.3)';
+            });
+            elem.addEventListener('mouseout', () => {
+                cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                cursor.style.backgroundColor = 'transparent';
+            });
+        });
+    </script>
 
-    document.addEventListener('mousemove', e => {
-      cursor.style.left = e.clientX + 'px';
-      cursor.style.top = e.clientY + 'px';
-    });
-
-    document.querySelectorAll('a, img, button').forEach(el => {
-      el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-      el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-    });
-  </script>
 </body>
 </html>
+
